@@ -1,16 +1,11 @@
+import { Searchbar } from "./Searchbar/Searchbar";
+
+// const key = '36443440-862a7ce0430fc541f34c4596c';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div >
+      <Searchbar/>
     </div>
   );
 };
