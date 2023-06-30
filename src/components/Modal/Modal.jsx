@@ -1,5 +1,5 @@
 import { Component } from "react";
-import styles from'./Modal.module.css'
+import styles from './Modal.module.css'
 
 export class Modal extends Component {
   componentDidMount() {
@@ -21,23 +21,23 @@ export class Modal extends Component {
       this.props.onCloseModal();
     }
   }
-    render(){
-        const {isOpen, imageURL}= this.props;
-        return(
-            isOpen &&( 
-            <div className={styles.overlay} onClick={this.handleBackdropClick}>
-              
-              <div className={styles.modal}>
-                <img src={imageURL} alt="" />
-                
-              </div>
-              <button className={styles.closeButton} onClick={this.props.onCloseModal}>
-              {/* &times; */}
-              X
-                </button>
-            </div>
-            )
-            
-        )
-    }
+  render() {
+    const { isOpen, imageURL } = this.props;
+    return (
+      isOpen && (
+        <div className={styles.overlay} onClick={this.handleBackdropClick}>
+
+          <div className={styles.modal}>
+            <img src={imageURL} alt="" />
+
+          </div>
+          <button className={styles.closeButton} onClick={this.props.onCloseModal}>
+            {/* &times; */}
+            X
+          </button>
+        </div>
+      )
+
+    )
+  }
 }

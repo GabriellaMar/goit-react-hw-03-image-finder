@@ -25,3 +25,6 @@ margin-left:  45%;
   .loadMoreButton:focus {
     background-color: #303f9f;
   }
+  .hideBtn{
+    display: none;
+  }
